@@ -200,7 +200,6 @@ const startServer = async () => {
     // Create the schema
     const typeDefs = `
         type Query {
-            hello(name: String): String!
             ${tables.map(table => convertToTypeDefs(table.name))}
         }
 
